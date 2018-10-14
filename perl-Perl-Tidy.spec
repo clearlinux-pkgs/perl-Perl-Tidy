@@ -4,15 +4,15 @@
 #
 Name     : perl-Perl-Tidy
 Version  : 20180220
-Release  : 1
+Release  : 2
 URL      : https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20180220.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20180220.tar.gz
 Summary  : 'indent and reformat perl scripts'
 Group    : Development/Tools
 License  : GPL-2.0
-Requires: perl-Perl-Tidy-bin
-Requires: perl-Perl-Tidy-license
-Requires: perl-Perl-Tidy-man
+Requires: perl-Perl-Tidy-bin = %{version}-%{release}
+Requires: perl-Perl-Tidy-license = %{version}-%{release}
+Requires: perl-Perl-Tidy-man = %{version}-%{release}
 BuildRequires : buildreq-cpan
 
 %description
@@ -23,8 +23,8 @@ write scripts in html format.
 %package bin
 Summary: bin components for the perl-Perl-Tidy package.
 Group: Binaries
-Requires: perl-Perl-Tidy-license
-Requires: perl-Perl-Tidy-man
+Requires: perl-Perl-Tidy-license = %{version}-%{release}
+Requires: perl-Perl-Tidy-man = %{version}-%{release}
 
 %description bin
 bin components for the perl-Perl-Tidy package.
@@ -33,8 +33,8 @@ bin components for the perl-Perl-Tidy package.
 %package dev
 Summary: dev components for the perl-Perl-Tidy package.
 Group: Development
-Requires: perl-Perl-Tidy-bin
-Provides: perl-Perl-Tidy-devel
+Requires: perl-Perl-Tidy-bin = %{version}-%{release}
+Provides: perl-Perl-Tidy-devel = %{version}-%{release}
 
 %description dev
 dev components for the perl-Perl-Tidy package.
@@ -81,12 +81,12 @@ make TEST_VERBOSE=1 test
 
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/perl-Perl-Tidy
-cp COPYING %{buildroot}/usr/share/doc/perl-Perl-Tidy/COPYING
+mkdir -p %{buildroot}/usr/share/package-licenses/perl-Perl-Tidy
+cp COPYING %{buildroot}/usr/share/package-licenses/perl-Perl-Tidy/COPYING
 if test -f Makefile.PL; then
-make pure_install PERL_INSTALL_ROOT=%{buildroot}
+make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
-./Build install --installdirs=site --destdir=%{buildroot}
+./Build install --installdirs=vendor --destdir=%{buildroot}
 fi
 find %{buildroot} -type f -name .packlist -exec rm -f {} ';'
 find %{buildroot} -depth -type d -exec rmdir {} 2>/dev/null ';'
@@ -95,8 +95,8 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.26.1/Perl/Tidy.pm
-/usr/lib/perl5/site_perl/5.26.1/Perl/Tidy.pod
+/usr/lib/perl5/vendor_perl/5.26.1/Perl/Tidy.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Perl/Tidy.pod
 
 %files bin
 %defattr(-,root,root,-)
@@ -107,9 +107,9 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 /usr/share/man/man3/Perl::Tidy.3
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/perl-Perl-Tidy/COPYING
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/perl-Perl-Tidy/COPYING
 
 %files man
-%defattr(-,root,root,-)
+%defattr(0644,root,root,0755)
 /usr/share/man/man1/perltidy.1

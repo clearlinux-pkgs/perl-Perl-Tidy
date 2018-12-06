@@ -4,7 +4,7 @@
 #
 Name     : perl-Perl-Tidy
 Version  : 20181120
-Release  : 7
+Release  : 8
 URL      : https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20181120.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20181120.tar.gz
 Summary  : 'indent and reformat perl scripts'

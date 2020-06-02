@@ -4,7 +4,7 @@
 #
 Name     : perl-Perl-Tidy
 Version  : 20200110
-Release  : 19
+Release  : 20
 URL      : https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20200110.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20200110.tar.gz
 Summary  : 'indent and reformat perl scripts'
@@ -125,22 +125,22 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.2/Perl/Tidy.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Perl/Tidy.pod
-/usr/lib/perl5/vendor_perl/5.30.2/Perl/Tidy/Debugger.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Perl/Tidy/DevNull.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Perl/Tidy/Diagnostics.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Perl/Tidy/FileWriter.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Perl/Tidy/Formatter.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Perl/Tidy/HtmlWriter.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Perl/Tidy/IOScalar.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Perl/Tidy/IOScalarArray.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Perl/Tidy/IndentationItem.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Perl/Tidy/LineBuffer.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Perl/Tidy/LineSink.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Perl/Tidy/LineSource.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Perl/Tidy/Logger.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Perl/Tidy/Tokenizer.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Perl/Tidy/VerticalAligner.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Perl/Tidy/VerticalAligner/Alignment.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Perl/Tidy/VerticalAligner/Line.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Perl/Tidy.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Perl/Tidy.pod
+/usr/lib/perl5/vendor_perl/5.30.3/Perl/Tidy/Debugger.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Perl/Tidy/DevNull.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Perl/Tidy/Diagnostics.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Perl/Tidy/FileWriter.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Perl/Tidy/Formatter.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Perl/Tidy/HtmlWriter.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Perl/Tidy/IOScalar.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Perl/Tidy/IOScalarArray.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Perl/Tidy/IndentationItem.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Perl/Tidy/LineBuffer.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Perl/Tidy/LineSink.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Perl/Tidy/LineSource.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Perl/Tidy/Logger.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Perl/Tidy/Tokenizer.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Perl/Tidy/VerticalAligner.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Perl/Tidy/VerticalAligner/Alignment.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Perl/Tidy/VerticalAligner/Line.pm

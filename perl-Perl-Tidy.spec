@@ -4,7 +4,7 @@
 #
 Name     : perl-Perl-Tidy
 Version  : 20220217
-Release  : 41
+Release  : 42
 URL      : https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20220217.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20220217.tar.gz
 Summary  : 'indent and reformat perl scripts'

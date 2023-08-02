@@ -5,7 +5,7 @@
 #
 Name     : perl-Perl-Tidy
 Version  : 20230701
-Release  : 48
+Release  : 49
 URL      : https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20230701.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20230701.tar.gz
 Summary  : 'indent and reformat perl scripts'

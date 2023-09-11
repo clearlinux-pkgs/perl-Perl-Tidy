@@ -4,10 +4,10 @@
 # Using build pattern: cpan
 #
 Name     : perl-Perl-Tidy
-Version  : 20230701
-Release  : 49
-URL      : https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20230701.tar.gz
-Source0  : https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20230701.tar.gz
+Version  : 20230909
+Release  : 50
+URL      : https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20230909.tar.gz
+Source0  : https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20230909.tar.gz
 Summary  : 'indent and reformat perl scripts'
 Group    : Development/Tools
 License  : GPL-2.0
@@ -71,10 +71,10 @@ perl components for the perl-Perl-Tidy package.
 
 
 %prep
-%setup -q -n Perl-Tidy-20230701
-cd %{_builddir}/Perl-Tidy-20230701
+%setup -q -n Perl-Tidy-20230909
+cd %{_builddir}/Perl-Tidy-20230909
 pushd ..
-cp -a Perl-Tidy-20230701 buildavx2
+cp -a Perl-Tidy-20230909 buildavx2
 popd
 
 %build

@@ -1,5 +1,5 @@
 PKG_NAME := perl-Perl-Tidy
-URL = https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20240903.tar.gz
+URL = https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20250105.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common

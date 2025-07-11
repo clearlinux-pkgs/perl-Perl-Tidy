@@ -6,10 +6,10 @@
 # autospec commit: 65cf152
 #
 Name     : perl-Perl-Tidy
-Version  : 20250616
-Release  : 63
-URL      : https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20250616.tar.gz
-Source0  : https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20250616.tar.gz
+Version  : 20250711
+Release  : 64
+URL      : https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20250711.tar.gz
+Source0  : https://cpan.metacpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-20250711.tar.gz
 Summary  : 'indent and reformat perl scripts'
 Group    : Development/Tools
 License  : GPL-2.0
@@ -74,10 +74,10 @@ perl components for the perl-Perl-Tidy package.
 
 
 %prep
-%setup -q -n Perl-Tidy-20250616
-cd %{_builddir}/Perl-Tidy-20250616
+%setup -q -n Perl-Tidy-20250711
+cd %{_builddir}/Perl-Tidy-20250711
 pushd ..
-cp -a Perl-Tidy-20250616 buildavx2
+cp -a Perl-Tidy-20250711 buildavx2
 popd
 
 %build
